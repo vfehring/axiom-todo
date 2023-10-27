@@ -31,17 +31,17 @@ func ConnectDB() {
 	DB = db
 }
 
-func CreateAxiomClient() {
+// func CreateAxiomClient() {
 
-	client, err := axiom.NewClient(
-		axiom.SetPersonalTokenConfig(AXIOM_TOKEN, AXIOM_ORG_ID),
-	)
-	if err != nil {
-		panic("Could not create Axiom client")
-	}
+// 	client, err := axiom.NewClient(
+// 		axiom.SetPersonalTokenConfig(AXIOM_TOKEN, AXIOM_ORG_ID),
+// 	)
+// 	if err != nil {
+// 		panic("Could not create Axiom client")
+// 	}
 
-	AXIOM = client
-}
+// 	AXIOM = client
+// }
 
 func main() {
 	app := fiber.New()
